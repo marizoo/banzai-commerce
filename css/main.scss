@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+$colDark:#242424;
+$colDarker:#1d1d1d;
+$colWhite: #fff;
+$colGray: gray;
+$colLightGray: gray;
+$colBrand: hotpink;
+$colBrand1: limegreen;
+
+// NAVBAR ----------------------------------------------
+nav{
+
+    background-color: $colDarker;
+    color: $colWhite;
+    padding: 20px 50px;
+
+    .navTop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .navItem{
+
+            .logo{
+                font-size: 20px;
+            }
+    
+    
+            .search{
+                display: flex;
+                align-items: center;
+                padding: 15px 50px;
+                background-color: $colGray;
+                border-radius: 20px;
+
+                .searchInput{
+                    font-size: 16px;
+                    color: $colWhite;
+                    background: transparent;
+                    border: none;
+
+                    &:focus{
+                        outline: none;
+                    }
+
+                    &::placeholder{
+                        color: $colWhite;
+                    }
+                }
+                .searchIcon{
+                    color: $colWhite;
+                    cursor: pointer;
+                } 
+            }
+
+            .limitedOffer{
+                font-size: 20px;
+                font-weight: 600;
+                cursor: pointer;
+                color: $colBrand;
+                text-transform: uppercase;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    color: $colBrand1;
+                }
+
+            }
+        }
+    }
+    
+    .navBottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        .menuItem{
+            margin: 30px 50px 20px 0;
+            font-weight: 400;
+            color: $colLightGray;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: $colWhite;
+            }
+        }
+    }
+}
+
+// SLIDER ----------------------------------
+.slider{
+    overflow: hidden;
+
+    .sliderWrapper{
+        display: flex;
+        width: 500vw;
+        height: 100vh;
+        color: $colWhite;
+        transition: all 1s ease-in-out;
+
+        .sliderItem{
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow:hidden;
+
+            .sliderImgContainer{
+                flex: 60%;
+                height: 100%;
+
+
+                .sliderImg{width: 100%;}
+            }
+
+            .slideDesc{
+                flex: 40%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .sliderTitle{
+                    font-size: 60px;
+                    margin-top: 80px;
+                    margin-left: 80px;
+                    font-weight: 900;
+                }
+
+                .sliderPrice{
+                    font-size: 40px;
+                    font-weight: 300;
+                    margin-top: 20px;
+                    margin-left: 80px;
+
+                }
+
+                .buyButton{
+                    border: 1px solid $colLightGray;
+                    color: $colWhite;
+                    background: 0;
+                    border-radius: 20px;
+                    padding: 6px 10px;
+                    font-size: 20px;
+                    width: 70%;
+                    margin-top: 50px;
+                    margin-left: 80px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+
+                    &:hover{
+                    background: $colLightGray;
+                        
+                    }
+                    
+                }
+            }
+
+        }
+
+        .sliderItem:nth-child(1){background: $colDarker;}
+        .sliderItem:nth-child(2){background: $colDark;}
+        .sliderItem:nth-child(3){background: $colDarker;}
+        .sliderItem:nth-child(4){background: $colDark;}
+        .sliderItem:nth-child(5){background: $colDarker;}
+    }
+}
+
+
