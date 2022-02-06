@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Lato', sans-serif;
     padding: 0;
@@ -11,6 +15,7 @@
 $colDark:#242424;
 $colDarker:#1d1d1d;
 $colWhite: #fff;
+$colWhite1: whitesmoke;
 $colGray: gray;
 $colLightGray: gray;
 $colBrand: hotpink;
@@ -104,7 +109,7 @@ nav{
     .sliderWrapper{
         display: flex;
         width: 500vw;
-        height: 100vh;
+        height: 90vh;
         color: $colWhite;
         transition: all 1s ease-in-out;
 
@@ -133,6 +138,7 @@ nav{
                     margin-top: 80px;
                     margin-left: 80px;
                     font-weight: 900;
+                    opacity: 80%;
                 }
 
                 .sliderPrice{
@@ -179,6 +185,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 60px 0;
 
     .feature{
         width: 90%;
@@ -206,4 +213,97 @@ nav{
     }
 }
 
+//  PRODUCTS --------------------------------------
+.product{
+    height: 100vh;
+    background-color: $colWhite1;
+    position: relative;
 
+    .productImg{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .productDetails{
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        width: 40%;
+
+        .productTitle{
+            font-size: 75px;
+            font-weight: 900;
+        }
+
+        .productPrice{
+            font-size: 40px;
+            margin: 30px 0 ;
+        }
+
+        .productDesc{
+            font-size: 24px;
+            color: $colGray;
+            margin-bottom: 30px;
+        }
+
+    }
+    .sizes{
+        display: flex;
+        .size{
+            margin-right: 20px;
+            background: $colLightGray;
+            color: $colWhite;
+            padding: 4px 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+
+
+            &:hover {
+                background: $colBrand;
+                color: $colWhite;
+                border: 1px solid $colBrand;
+            }
+        }
+    }
+    .spices{
+        display: flex;
+        margin: 20px 0;
+        .spice{
+            margin-right: 30px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            color: $colLightGray;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            padding: 6px;
+            border-radius: 6px;
+
+            &:hover{
+                color: $colBrand;
+                border: 1px solid $colBrand;
+                font-weight: 600;
+            }
+        }
+    }
+    .productButton{
+        float: right;
+        margin: 30px 0;
+        padding: 10px 20px;
+        background: $colDark;
+        color: $colWhite;
+
+        font-size: 18px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 0;
+
+        &:hover{
+        background: $colBrand;
+        color: $colWhite;
+
+        }
+    }
+}
