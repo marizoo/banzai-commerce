@@ -119,8 +119,6 @@ nav{
             .sliderImgContainer{
                 flex: 60%;
                 height: 100%;
-
-
                 .sliderImg{width: 100%;}
             }
 
@@ -173,6 +171,38 @@ nav{
         .sliderItem:nth-child(3){background: $colDarker;}
         .sliderItem:nth-child(4){background: $colDark;}
         .sliderItem:nth-child(5){background: $colDarker;}
+    }
+}
+
+// FEATURES -----------------------------------
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .feature{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .featureImg{
+            font-size: 50px;
+            color: $colBrand;
+        }
+        .featureTitle{
+            font-size: 20px;
+            font-weight: 600;
+            margin: 20px;
+        }
+
+        .featureDesc{
+            width: 50%;
+            height: 100px;
+            color: $colGray;
+        }
     }
 }
 
