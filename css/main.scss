@@ -307,6 +307,7 @@ nav{
         }
     }
 
+    // Payment ---------------------------------------
     .payment{
         width: 500px;
         height: 500px;
@@ -400,6 +401,7 @@ nav{
     }
 }
 
+// GALLERY ----------------------------------------
 .gallery {
     padding: 50px;
     display: flex;
@@ -420,6 +422,7 @@ nav{
     }
 }
 
+// NEW MENU ------------------------------------------
 .newMenu{
     display: flex;
 
@@ -448,6 +451,85 @@ nav{
             padding: 15px;
             font-weight: 600;
             cursor: pointer;
+        }
+
+    }
+}
+
+// FOOTER ----------------------------------------
+.footer{
+display: flex;
+
+    .footerLeft{
+        flex: 2;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        .footerMenu{
+
+            .fMenuTitle{
+                font-size: 16px;
+                margin-bottom: 15px;
+
+            }
+
+            .fMenuList{
+                list-style: none;
+
+                .fMenuListItem{
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    margin-bottom: 10px;
+                    color: $colLightGray;
+
+                    &:hover {
+                        color: $colGray;
+                    }
+                }
+            }
+        }
+    }
+
+    .footerRight{
+        flex: 1;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .footerRightMenu{
+
+            .fMenuTitle{
+                margin-bottom: 10px;
+                font-size: 22px;
+            }
+            .fMail{
+                .fMailInput{
+                    padding: 5px;
+                }
+                .fMailButton{
+                    padding: 5px;
+                    background-color: $colDark;
+                    color: $colWhite;
+                    border: 0;
+                    cursor: pointer;
+                    margin-left: 10px;
+                }
+            }
+            .fIcons{
+                display: flex;
+
+                .fIcon{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
+            }
+
+            .copyright{
+                font-weight: 300;
+                font-size: 14px;
+            }
         }
 
     }
