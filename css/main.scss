@@ -18,7 +18,7 @@ $colWhite: #fff;
 $colWhite1: whitesmoke;
 $colGray: gray;
 $colLightGray: gray;
-$colBrand: hotpink;
+$colBrand: orange;
 $colBrand1: limegreen;
 
 // NAVBAR ----------------------------------------------
@@ -304,6 +304,98 @@ nav{
         background: $colBrand;
         color: $colWhite;
 
+        }
+    }
+
+    .payment{
+        width: 500px;
+        height: 500px;
+        background-color: $colWhite;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 10px 50px;
+        display: none;
+        flex-direction: column;
+        box-shadow: 0 0 13px 2px rgba(0, 0, 0, 0.5);
+
+        .payTitle{
+            font-size: 20px;
+            color: $colGray;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: 400;
+            font-size: 14px;
+            color: $colLightGray;
+        }
+
+        .payInput{
+            padding: 10px;
+            margin: 10px 0;
+            border: 0;
+            border-bottom: 1px solid $colGray;
+            color: $colLightGray;
+
+            &:focus{
+                outline: $colBrand1;
+            }
+        }
+
+        .cardIcons{
+            display: flex;
+
+            .cardIcon{ margin-right: 10px;}
+        }
+
+        .cardInfo{
+            display: flex;
+            justify-content: space-between;
+
+            .sm{
+                width: 30%;
+            }
+        }
+
+        .payButton{
+            position: absolute;
+            height: 40px;
+            bottom: -40px;
+            width: 100%;
+            left: 0;
+            box-shadow: 0 0 13px 2px rgba(0, 0, 0, 0.3);
+            background-color: $colBrand1;
+            color: $colWhite;
+            border: 0;
+            font-size: 20px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $colBrand;
+            }
+        }
+
+        .closebtn{
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            background-color: $colGray;
+            color: $colWhite;
+            cursor: pointer;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 2px;
+
+            &:hover{
+                background-color: $colLightGray;
+            }
         }
     }
 }

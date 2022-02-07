@@ -2,6 +2,9 @@ const wrapper = document.querySelector(".sliderWrapper");
 const menuItems = document.querySelectorAll(".menuItem");
 const productSizes = document.querySelectorAll(".size");
 const productSpices = document.querySelectorAll(".spice");
+const orderNowBtn = document.querySelector(".productButton");
+const paymentModal = document.querySelector(".payment");
+const closeModalBtn = document.querySelector(".closebtn");
 
 // products array
 const products = [
@@ -63,9 +66,9 @@ productSizes.forEach((size, index) => {
             size.style.color = "white";
             size.style.border = "1px solid transparent";
         });
-        size.style.backgroundColor = "hotpink";
+        size.style.backgroundColor = "orange";
         size.style.color = "white";
-        size.style.border = "1px solid hotpink";
+        size.style.border = "1px solid orange";
     });
 });
 
@@ -76,11 +79,20 @@ productSpices.forEach((spice, index) => {
             spice.style.fontWeight = "400";
             spice.style.color = "gray";
         });
-        spice.style.border = "2px solid hotpink";
+        spice.style.border = "2px solid orange";
         spice.style.fontWeight = "800";
-        spice.style.color = "hotpink";
+        spice.style.color = "orange";
     });
 });
 
+orderNowBtn.addEventListener("click", () => {
+    paymentModal.style.display = "flex";
+});
+
+closeModalBtn.addEventListener("click", () => {
+    paymentModal.style.display = "none";
+});
+
 // https://www.youtube.com/watch?v=b3Gqq_k-g24&t=73s
-// till minute 36
+// till minute 1.01.
+//
