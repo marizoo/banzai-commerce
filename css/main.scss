@@ -399,3 +399,23 @@ nav{
         }
     }
 }
+
+.gallery {
+    padding: 50px;
+    display: flex;
+
+    .galleryItem{
+        flex: 1;
+        padding: 50px;
+        text-align: center;
+
+        .galleryTitle{
+            margin-bottom: 10px;
+            color: $colBrand;
+        }
+
+        .galleryImg{
+            width: 100%;
+        }
+    }
+}
