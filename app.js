@@ -92,7 +92,3 @@ orderNowBtn.addEventListener("click", () => {
 closeModalBtn.addEventListener("click", () => {
     paymentModal.style.display = "none";
 });
-
-// https://www.youtube.com/watch?v=b3Gqq_k-g24&t=73s
-// till minute 1.01.
-//
